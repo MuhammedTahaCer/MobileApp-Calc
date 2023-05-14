@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="33dp"
         android:gravity="center"
-        android:text="TextView"
+        android:text="Eğitim Hesaplamrı"
         android:textSize="20sp" />
 
     <HorizontalScrollView
@@ -22,11 +22,14 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="20dp">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
+                app:cardBackgroundColor="#673AB7"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
@@ -35,10 +38,12 @@
                     android:layout_margin="10dp">
 
                     <TextView
-                        android:layout_width="410dp"
+                        android:id="@+id/dersHesapla"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="deneme "
+                        android:text="Ders Hesaplama"
+                        android:textColor="#FFFFFF"
                         android:textSize="24dp" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
@@ -46,6 +51,8 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:padding="8dp"
+                app:cardBackgroundColor="#E91E63"
                 app:cardCornerRadius="10dp">
 
                 <RelativeLayout
@@ -54,10 +61,11 @@
                     android:layout_margin="10dp">
 
                     <TextView
-                        android:layout_width="410dp"
+                        android:layout_width="200dp"
                         android:layout_height="match_parent"
                         android:gravity="center"
-                        android:text="dddeeennnmmeee"
+                        android:text="test"
+                        android:textColor="#FFFDFD"
                         android:textSize="24dp" />
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
