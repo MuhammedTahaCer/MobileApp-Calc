@@ -15,9 +15,13 @@ class VizeFinalCalc : AppCompatActivity() {
         setContentView(R.layout.activity_vize_final_calc)
         var buttonCalc=findViewById<Button>(R.id.calc)
         var tvSonuc=findViewById<TextView>(R.id.twSonuc)
+        var tnVize=findViewById<TextView>(R.id.tnVize)
+        var tnFinal=findViewById<TextView>(R.id.tnFinal)
 
         buttonCalc.setOnClickListener(){
 
+            vizeNotu=tnVize.text.toString().toInt()
+            finalNotu=tnFinal.text.toString().toInt()
             sonuc= (vizeNotu*0.4 + finalNotu*0.6).toInt()
 
             if(sonuc>=50 && finalNotu>=50){
